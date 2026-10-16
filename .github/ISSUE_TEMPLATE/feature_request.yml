@@ -36,10 +36,6 @@ body:
     validations:
       required: true
   - type: textarea
-    id: alternatives
-    attributes:
-      label: 今の回避方法・ほかの案 / Workarounds or alternatives
-  - type: textarea
     id: context
     attributes:
       label: 補足 / Additional context
