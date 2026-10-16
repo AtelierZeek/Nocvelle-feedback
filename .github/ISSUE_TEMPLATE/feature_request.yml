@@ -1,0 +1,45 @@
+name: 要望 / Feature request
+description: Nocvelle への要望・提案を送ります / Suggest an idea for Nocvelle
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ このIssueは公開されます / This issue is public
+        書いた内容は、誰でも読めます。個人情報や、公開したくない本の題名は、書かないでください。
+        Anyone can read what you write. Please do not include personal information or titles you do not want to make public.
+  - type: checkboxes
+    id: guidelines
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 同じ要望が、すでに出されていないか確認しました / I searched existing issues
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン / App version
+      description: アプリから開くと、自動で入力されます / Filled in automatically when opened from the app
+  - type: textarea
+    id: problem
+    attributes:
+      label: 困っていること・やりたいこと / What you want to do
+      description: どんな場面で、何に困っていますか。 / In what situation, and what is difficult?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: こうなってほしい / What you would like
+      description: 思い描いている動作があれば、書いてください。 / Describe the behavior you have in mind, if any.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 今の回避方法・ほかの案 / Workarounds or alternatives
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足 / Additional context
+      description: 他のアプリでの例など。スクリーンショットは、公開してよいものだけを添付してください。

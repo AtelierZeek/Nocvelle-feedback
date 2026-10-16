@@ -7,3 +7,6 @@ This repository only collects bug reports for Nocvelle (an Android manga viewer)
   Please report bugs from the app: About → Report a bug.
 - **このリポジトリのIssueは公開されます。** 添付するログには、アプリの動作記録と端末情報が含まれます。本のファイル名・パスは伏せ字になっていますが、添付する前に、内容を確認してください。
   **Issues here are public.** The log contains the app's activity and device information. Book file names and paths are masked, but please review the file before attaching it.
+
+- 要望・提案は、アプリの「アプリについて」→「要望を送る」から送ってください。
+  Send feature requests from the app: About → Send a request.
