@@ -33,7 +33,7 @@ body:
     id: environment
     attributes:
       label: 環境 / Environment
-      description: Androidの版・端末名 / Android version and device
+      description: Androidのバージョン・端末名 / Android version and device
   - type: textarea
     id: steps
     attributes:
