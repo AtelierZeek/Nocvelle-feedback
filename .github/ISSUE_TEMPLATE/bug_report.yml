@@ -38,7 +38,7 @@ body:
     id: steps
     attributes:
       label: 再現手順 / Steps to reproduce
-      description: どの本（形式: ZIP・RAR・PDF・EPUB、端末内かSMBか）で、何をしたかを書いてください。本のファイル名は書かなくて構いません。
+      description: どの本（形式はZIP・RAR・PDF・EPUBのどれか、端末内かSMBか）で、何をしたかを書いてください。本のファイル名は書かなくて構いません。
     validations:
       required: true
   - type: textarea
