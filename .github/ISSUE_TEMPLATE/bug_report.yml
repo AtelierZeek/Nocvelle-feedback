@@ -61,6 +61,11 @@ body:
     validations:
       required: true
   - type: textarea
+    id: books
+    attributes:
+      label: 関係する本の題名（任意） / Related book titles (optional)
+      description: ログでは、本のファイル名は伏せ字（file#…）になっています。原因の特定に役立つ場合は、公開してよい題名・ファイル名の例だけを、ここへ書いてください。 / File names are masked (file#…) in the log. If it helps, write only titles you are happy to make public.
+  - type: textarea
     id: screenshots
     attributes:
       label: スクリーンショット・動画 / Screenshots or video
