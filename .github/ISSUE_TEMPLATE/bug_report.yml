@@ -7,8 +7,8 @@ body:
     attributes:
       value: |
         ## ⚠️ このIssueは公開されます / This issue is public
-        添付するログには、アプリの動作記録と端末情報が含まれます。本のファイル名・パスは伏せ字になっていますが、**添付する前に、内容を確認してください**。
-        The attached log contains the app's activity and device information. Book file names and paths are masked, but **please review the file before attaching it**.
+        添付するログには、アプリの動作記録と端末情報が含まれます。本のファイル名・パスは、既定では伏せ字になっています（保存時に「本の名前をログに含める」を選んだ場合は、名前が入ります）。**添付する前に、内容を確認してください**。
+        The attached log contains the app's activity and device information. Book file names and paths are masked by default (they are included only if you chose to include book names when saving). **Please review the file before attaching it**.
 
         ログは、アプリの「アプリについて」→「不具合を報告」で保存できます。
         You can save the log from the app: About → Report a bug.
@@ -65,7 +65,7 @@ body:
     id: books
     attributes:
       label: 関係する本の題名（任意） / Related book titles (optional)
-      description: ログでは、本のファイル名は伏せ字（file#…）になっています。原因の特定に役立つ場合は、公開してよい題名・ファイル名の例だけを、ここへ書いてください。 / File names are masked (file#…) in the log. If it helps, write only titles you are happy to make public.
+      description: ログでは、本のファイル名は、既定で伏せ字（file#…）になっています。原因の特定に役立つ場合は、公開してよい題名・ファイル名の例だけを、ここへ書いてください。 / File names are masked (file#…) in the log by default. If it helps, write only titles you are happy to make public.
   - type: textarea
     id: screenshots
     attributes:
