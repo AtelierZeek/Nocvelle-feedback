@@ -1,0 +1,71 @@
+name: 不具合の報告 / Bug report
+description: Nocvelle の不具合を報告します / Report a bug in Nocvelle
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚠️ このIssueは公開されます / This issue is public
+        添付するログには、アプリの動作記録と端末情報が含まれます。本のファイル名・パスは伏せ字になっていますが、**添付する前に、内容を確認してください**。
+        The attached log contains the app's activity and device information. Book file names and paths are masked, but **please review the file before attaching it**.
+
+        ログは、アプリの「アプリについて」→「不具合を報告」で保存できます。
+        You can save the log from the app: About → Report a bug.
+  - type: checkboxes
+    id: guidelines
+    attributes:
+      label: 確認 / Confirmation
+      options:
+        - label: 同じ不具合が、すでに報告されていないか確認しました / I searched existing issues
+          required: true
+        - label: 添付するログの内容を確認しました / I reviewed the log before attaching it
+          required: true
+  - type: input
+    id: version
+    attributes:
+      label: アプリのバージョン / App version
+      description: アプリから開くと、自動で入力されます / Filled in automatically when opened from the app
+  - type: input
+    id: build
+    attributes:
+      label: ビルド / Build
+  - type: input
+    id: environment
+    attributes:
+      label: 環境 / Environment
+      description: Androidの版・端末名 / Android version and device
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 / Steps to reproduce
+      description: どの本（形式: ZIP・RAR・PDF・EPUB、端末内かSMBか）で、何をしたかを書いてください。本のファイル名は書かなくて構いません。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作 / Expected result
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作 / Actual result
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: ログ / Log
+      description: 保存したログファイル（nocvelle-log-….txt）を、ここへドラッグして添付してください。 / Drag the saved log file (nocvelle-log-….txt) here.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: スクリーンショット・動画 / Screenshots or video
+      description: 本の表紙や中身が写る場合は、公開してよいものだけを添付してください。
+  - type: textarea
+    id: context
+    attributes:
+      label: 補足 / Additional context
