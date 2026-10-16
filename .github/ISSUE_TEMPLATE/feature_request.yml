@@ -1,5 +1,6 @@
 name: 要望 / Feature request
 description: Nocvelle への要望・提案を送ります / Suggest an idea for Nocvelle
+title: "[要望] "
 labels: ["enhancement"]
 body:
   - type: markdown

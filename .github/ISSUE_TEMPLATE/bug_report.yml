@@ -1,5 +1,6 @@
 name: 不具合の報告 / Bug report
 description: Nocvelle の不具合を報告します / Report a bug in Nocvelle
+title: "[不具合] "
 labels: ["bug"]
 body:
   - type: markdown
@@ -38,7 +39,6 @@ body:
     id: steps
     attributes:
       label: 再現手順 / Steps to reproduce
-      description: どの本（形式はZIP・RAR・PDF・EPUBのどれか、端末内かSMBか）で、何をしたかを書いてください。本のファイル名は書かなくて構いません。
     validations:
       required: true
   - type: textarea
@@ -53,13 +53,14 @@ body:
       label: 実際の動作 / Actual result
     validations:
       required: true
-  - type: textarea
+  - type: upload
     id: logs
     attributes:
       label: ログ / Log
-      description: 保存したログファイル（nocvelle-log-….txt）を、ここへドラッグして添付してください。 / Drag the saved log file (nocvelle-log-….txt) here.
+      description: "保存したログファイル（nocvelle-log-….txt）を、ここへドラッグして添付してください。 / Drag the saved log file (nocvelle-log-….txt) here."
     validations:
       required: true
+      accept: ".txt,.log"
   - type: textarea
     id: books
     attributes:
