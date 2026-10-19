@@ -1,12 +1,8 @@
-# Nocvelle feedback
+# 報告用リポジトリのテンプレート
 
-Nocvelle（Android用の漫画ビューア）の不具合報告を受けるための、Issue専用のリポジトリです。コードは置いていません。
-This repository only collects bug reports for Nocvelle (an Android manga viewer). It contains no code.
+`AtelierZeek/Nocvelle-feedback`（公開・Issue専用）へ置く、Issueフォームの下書き。アプリの「不具合を報告」（`BugReport`）が開く `bug_report.yml` と、空のIssueを止める `config.yml`。
 
-- 不具合は、アプリの「アプリについて」→「不具合を報告」から報告してください（ログの保存と、このリポジトリのIssueフォームを開く操作をします）。
-  Please report bugs from the app: About → Report a bug.
-- **このリポジトリのIssueは公開されます。** 添付するログには、アプリの動作記録と端末情報が含まれます。本のファイル名・パスは伏せ字になっていますが、添付する前に、内容を確認してください。
-  **Issues here are public.** The log contains the app's activity and device information. Book file names and paths are masked, but please review the file before attaching it.
-
-- 要望・提案は、アプリの「アプリについて」→「要望を送る」から送ってください。
-  Send feature requests from the app: About → Send a request.
+- `feature_request.yml` は、アプリの「要望を送る」が開く要望フォーム（バージョンだけを事前入力）。
+- フォームの項目 `version`・`build`・`environment` の `id` が、アプリが事前入力するURLのクエリ名と対応している。名前を変えるときは、`BugReport.issueUri` も合わせる。
+- Issueフォームの入力欄には、読み取り専用の指定がない。事前入力した項目（`version`・`build`・`environment`）は、書き換えられるため、欄の説明に「そのまま変更しないでください」と書いている（Issue #80）。
+- 開発リポジトリのPRに `Fixes AtelierZeek/Nocvelle-feedback#N` と書くと、既定ブランチへのマージ時に、公開Issueがクローズされる。

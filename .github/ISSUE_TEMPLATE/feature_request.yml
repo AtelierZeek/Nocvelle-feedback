@@ -20,7 +20,7 @@ body:
     id: version
     attributes:
       label: アプリのバージョン / App version
-      description: アプリから開くと、自動で入力されます / Filled in automatically when opened from the app
+      description: アプリから開くと自動で入力されます。そのまま変更しないでください（手動で開いた場合のみ入力） / Filled in automatically when opened from the app. Please leave it as is (enter it only if you opened this form manually)
   - type: textarea
     id: problem
     attributes:

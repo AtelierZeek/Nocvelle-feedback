@@ -25,16 +25,17 @@ body:
     id: version
     attributes:
       label: アプリのバージョン / App version
-      description: アプリから開くと、自動で入力されます / Filled in automatically when opened from the app
+      description: アプリから開くと自動で入力されます。そのまま変更しないでください（手動で開いた場合のみ入力） / Filled in automatically when opened from the app. Please leave it as is (enter it only if you opened this form manually)
   - type: input
     id: build
     attributes:
       label: ビルド / Build
+      description: アプリから開くと自動で入力されます。そのまま変更しないでください（手動で開いた場合のみ入力） / Filled in automatically when opened from the app. Please leave it as is (enter it only if you opened this form manually)
   - type: input
     id: environment
     attributes:
       label: 環境 / Environment
-      description: Androidのバージョン・端末名 / Android version and device
+      description: Androidのバージョンと端末名です。アプリから開くと自動で入力されます。そのまま変更しないでください（手動で開いた場合のみ入力） / Android version and device. Filled in automatically when opened from the app. Please leave it as is (enter it only if you opened this form manually)
   - type: textarea
     id: steps
     attributes:
